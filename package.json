@@ -1,0 +1,12 @@
+{
+  "name": "auto-fill-google-form",
+  "version": "0.2.2",
+  "private": true,
+  "description": "Chrome Extension hỗ trợ kiểm thử Google Forms.",
+  "scripts": {
+    "test": "node tests/core.test.js",
+    "validate": "node scripts/validate.mjs",
+    "check": "npm run test && npm run validate"
+  },
+  "license": "MIT"
+}

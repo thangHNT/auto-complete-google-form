@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Auto fill google form</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="popup-shell">
+      <div class="brand-row">
+        <div class="brand-mark" aria-hidden="true">A</div>
+        <div>
+          <h1>Auto fill google form</h1>
+          <p>Google Forms auto-fill assistant</p>
+        </div>
+      </div>
+
+      <form id="open-form" novalidate>
+        <label for="form-url">Liên kết Google Form</label>
+        <input
+          id="form-url"
+          name="formUrl"
+          type="url"
+          placeholder="https://docs.google.com/forms/.../viewform"
+          autocomplete="off"
+          required
+        />
+        <p id="status" class="status" role="status"></p>
+        <button type="submit">Phân tích biểu mẫu</button>
+      </form>
+
+      <p class="privacy-note">
+        Dữ liệu mẫu được lưu cục bộ trong trình duyệt. Không đọc mật khẩu hoặc cookie Google.
+      </p>
+    </main>
+
+    <script src="../shared/core.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
